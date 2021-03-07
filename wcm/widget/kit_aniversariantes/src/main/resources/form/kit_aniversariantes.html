@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+    <script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js"
+            charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+    <form name="kit_aniversariantes" role="form">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fullName">i18n.translate("kit_aniversariantes.fullname")</label>
+                    <input name="fullName" id="fullName" type="text" class="form-control"
+                           placeholder="i18n.translate(&quot;kit_aniversariantes.fullname&quot;)">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label for="birthDay">i18n.translate("kit_aniversariantes.day")</label>
+                    <input name="birthDay" id="birthDay" type="number" class="form-control" min="1" max="31" step="1">
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label for="birthMonth">i18n.translate("kit_aniversariantes.month")</label>
+                    <input name="birthMonth" id="birthMonth" type="number" class="form-control" min="1" max="12"
+                           step="1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert alert-info" role="alert">i18n.translate("kit_aniversariantes.imagedimension")</div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <name>fluig Nexus Repository</name>
+      <url>http://nexus.fluig.com/content/groups/public</url>
+    </repository>
+  </repositories>
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.fluig</groupId>
+    <artifactId>wcm</artifactId>
+    <version>1.5.13</version>
+  </parent>
+  <artifactId>kit-intranet-widgets</artifactId>
+  <packaging>pom</packaging>
+
+  <name>Kit Intranet - Widgets</name>
+  <description>Kit Intranet - Widgets</description>
+
+  <modules>
+    <module>kit_aniversariantes</module>
+    <module>kit_cardapio</module>
+    <module>kit_convenios</module>
+    <module>kit_news</module>
+    <module>kit_organograma</module>
+    <module>kit_slideshow</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <maven.build.timestamp.format>dd/MM/yy HH:mm:ss</maven.build.timestamp.format>
+    <build.version>LOCAL-${user.name}</build.version>
+    <build.revision>${maven.build.timestamp}</build.revision>
+  </properties>
+</project>

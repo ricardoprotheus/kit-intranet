@@ -1,0 +1,14 @@
+.classpath
+.project
+.settings/
+target/
+*.class
+*.iml
+.idea/
+bin/
+.metadata/
+bower_components/
+node_modules/
+.metadata
+*.versionsBackup
+*.log
